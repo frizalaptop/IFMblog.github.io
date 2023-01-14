@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@font-face {
+  font-family: myFont;
+  src: url(../image/WendyOne-Regular.ttf);
+}
+.logo-sosmed {
+  display: flex;
+  background-color: rgb(66, 62, 62);
+  height: 60px;
+  justify-content: space-between;
+}
+.mylogo {
+  color: white;
+  font-family: myFont;
+}
+.kepanjangan {
+  font-style: italic;
+  font-size: 12px;
+}
+.anak-logo-sosmed {
+  margin: 12px;
+}
+.logo {
+  display: inline;
+}
+.img-logo {
+  width: 30px;
+  margin-right: 20px;
+}
+#navbar {
+  background-color: skyblue;
+  display: flex;
+  height: 55px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.penampung-opsi {
+  padding-top: 2px;
+  margin: auto;
+}
+.opsi-navbar {
+  display: inline;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.opsi {
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+.link {
+  color: black;
+}
+.search-input {
+  height: 40px;
+  background: transparent;
+  border-bottom: 1px solid black;
+  border-radius: 50px;
+  padding: 5px;
+}
+.search-logo {
+  width: 20px;
+  height: 20px;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+}
+.container-main {
+  background-color: rgb(240, 231, 231);
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  background-color: white;
+}
+.img-thumbnail {
+  width: 400px;
+}
+.deskripsi {
+  padding: 5px;
+}
+.judul-blog,
+.keterangan-pembuatan,
+.sinopsis {
+  margin-bottom: 10px;
+}
+.judul-blog > a > h3 {
+  color: black;
+}
+.keterangan-pembuatan {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+.keterangan-pembuatan > p {
+  font-size: 14px;
+  color: grey;
+}
+.container-penulis {
+  display: flex;
+}
+.penulis {
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 5px;
+  background-color: whitesmoke;
+  border-radius: 25px;
+}
+.myfoto {
+  margin-top: 5px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+.myname {
+  text-align: center;
+}
+.mydescription {
+  text-align: justify;
+  font-weight: 12px;
+  margin: 12px;
+}
+footer {
+  background-color: skyblue;
+  color: gray;
+}
+.credit {
+  padding-top: 30px;
+  width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+.catatankaki {
+  padding: 30px;
+  text-align: center;
+}
