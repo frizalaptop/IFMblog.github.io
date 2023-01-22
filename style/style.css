@@ -32,7 +32,7 @@
   width: 30px;
   margin-right: 20px;
 }
-#navbar {
+.navbar {
   background-color: skyblue;
   display: flex;
   height: 55px;
@@ -71,14 +71,33 @@ a {
   width: 20px;
   height: 20px;
 }
+.menuButton {
+  display: none;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  margin: 8px 0px;
+}
+.allMenu {
+  border: 1px solid white;
+  display: none;
+  background-color: skyblue;
+  font-weight: bold;
+}
+.allMenu > li {
+  padding: 10px;
+  list-style-type: none;
+}
+.allMenu > li > a {
+  color: white;
+}
 main {
-  display: flex;
   justify-content: space-between;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 .container-main {
   background-color: rgb(240, 231, 231);
-  width: 1200px;
-  margin: auto;
   display: flex;
   flex-direction: row;
 }
@@ -151,7 +170,6 @@ footer {
 }
 .credit {
   padding-top: 30px;
-  width: 900px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -160,4 +178,91 @@ footer {
 .catatankaki {
   padding: 30px;
   text-align: center;
+}
+/* Media querry*/
+@media only screen and (max-width: 1000px) {
+  main {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .penampung-opsi {
+    display: none;
+  }
+  .menuButton {
+    display: block;
+  }
+  .card {
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    background-color: white;
+  }
+  .img-thumbnail {
+    width: 300px;
+  }
+  .keterangan-pembuatan {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .keterangan-pembuatan > p {
+    font-size: 10px;
+  }
+  .penulis {
+    width: 225px;
+    height: 400px;
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .container-main {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .container-card {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .container-penulis {
+    flex-direction: row;
+  }
+
+  .penulis {
+    width: 600px;
+    height: 300px;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .card {
+    width: 260px;
+    height: 400px;
+    margin: 5px;
+    background-color: white;
+  }
+  .img-thumbnail {
+    width: 260px;
+  }
+  .keterangan-pembuatan {
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .keterangan-pembuatan > p {
+    font-size: 10px;
+  }
+  .penulis {
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .img-logo {
+    width: 15px;
+    margin-right: 10px;
+    padding-top: 10px;
+  }
 }
