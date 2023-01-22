@@ -265,4 +265,13 @@ footer {
     margin-right: 10px;
     padding-top: 10px;
   }
+  .card {
+    width: 375px;
+    height: 400px;
+    margin: 5px;
+    background-color: white;
+  }
+  .img-thumbnail {
+    width: 375px;
+  }
 }
