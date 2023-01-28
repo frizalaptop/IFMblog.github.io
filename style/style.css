@@ -83,6 +83,18 @@ a {
   height: 40px;
   margin: 8px 0px;
 }
+.kembali {
+  display: inline;
+  color: red;
+  font-size: 14px;
+  cursor: default;
+}
+.kembali1 {
+  display: inline;
+  color: red;
+  font-size: 14px;
+  cursor: default;
+}
 .allMenu {
   border-top: 1px solid white;
   display: none;
@@ -109,6 +121,7 @@ main {
 .container-card {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .card {
   width: 400px;
@@ -141,6 +154,7 @@ main {
 }
 .container-penulis {
   display: flex;
+  justify-content: space-evenly;
 }
 .penulis {
   width: 300px;
@@ -186,6 +200,12 @@ footer {
 }
 /* Media querry*/
 @media only screen and (max-width: 1000px) {
+  #search-input {
+    margin: 0px 0px 10px 5px;
+  }
+  #search-logo {
+    width: 10px;
+  }
   main {
     margin-left: 0;
     margin-right: 0;
@@ -220,6 +240,12 @@ footer {
   }
 }
 @media only screen and (max-width: 900px) {
+  #search-input {
+    margin: 0px 0px 10px 5px;
+  }
+  #search-logo {
+    width: 10px;
+  }
   .container-main {
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -230,6 +256,7 @@ footer {
   }
   .container-penulis {
     flex-direction: row;
+    justify-content: space-evenly;
   }
 
   .penulis {
@@ -245,6 +272,12 @@ footer {
   }
   .allMenu > li > a {
     font-size: 14px;
+  }
+  #search-input {
+    margin: 0px 0px 10px 5px;
+  }
+  #search-logo {
+    width: 10px;
   }
   .card {
     width: 260px;

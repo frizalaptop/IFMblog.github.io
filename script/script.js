@@ -1,9 +1,7 @@
-window.onscroll = function () {
-  myFunction();
-};
 const navbar = document.querySelector('.navbar');
 const allMenu = document.querySelector('.allMenu');
 const sticky = navbar.offsetTop;
+
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add('sticky');
@@ -14,6 +12,40 @@ function myFunction() {
   }
 }
 
+function searchCardBlog() {
+  const input = document.getElementById('search-input').value.toLowerCase();
+  const cardList = document.querySelectorAll('.blogJudul');
+  for (card of cardList) {
+    if (card.innerText.toLowerCase().includes(input)) {
+      card.parentElement.parentElement.parentElement.parentElement.style.display = 'block';
+    } else {
+      card.parentElement.parentElement.parentElement.parentElement.style.display = 'none';
+    }
+  }
+}
+function searchCardBlog1() {
+  const input1 = document.querySelector('.search-input').value.toLowerCase();
+  const cardList = document.querySelectorAll('.blogJudul');
+  for (card of cardList) {
+    if (card.innerText.toLowerCase().includes(input1)) {
+      card.parentElement.parentElement.parentElement.parentElement.style.display = 'block';
+    } else {
+      card.parentElement.parentElement.parentElement.parentElement.style.display = 'none';
+    }
+  }
+}
+
+function searchReturn() {
+  const cardList = document.querySelectorAll('.blogJudul');
+  for (card of cardList) {
+    card.parentElement.parentElement.parentElement.parentElement.style.display = 'block';
+  }
+}
+
+window.onscroll = function () {
+  myFunction();
+};
+
 document.querySelector('.menuButton').addEventListener('click', function () {
   const allMenu = document.querySelector('.allMenu');
   if (allMenu.style.display === 'none') {
@@ -21,4 +53,45 @@ document.querySelector('.menuButton').addEventListener('click', function () {
   } else {
     allMenu.style.display = 'none';
   }
+});
+
+document.getElementById('search-logo').addEventListener('click', function () {
+  searchCardBlog();
+  const input = (document.getElementById('search-input').value = '');
+  const container = document.querySelector('.container-card');
+  const main = document.querySelector('.container-main');
+  main.style.flexDirection = 'column';
+  if (container.innerText == '') {
+    const isi = document.createElement('h3');
+    isi.innerText = 'Blog Tidak Ditemukan!';
+    isi.style.color = 'red';
+    isi.style.paddingTop = '50px';
+    isi.style.paddingBottom = '50px';
+    container.appendChild(isi);
+  }
+});
+document.querySelector('.search-logo').addEventListener('click', function () {
+  searchCardBlog1();
+  const input = (document.querySelector('.search-input').value = '');
+  const container = document.querySelector('.container-card');
+  const main = document.querySelector('.container-main');
+  main.style.flexDirection = 'column';
+  if (container.innerText == '') {
+    if (container.innerText == '') {
+      const isi = document.createElement('h3');
+      isi.innerText = 'Blog Tidak Ditemukan!';
+      isi.style.color = 'red';
+      isi.style.paddingTop = '50px';
+      isi.style.paddingBottom = '50px';
+      container.appendChild(isi);
+    }
+  }
+});
+const container = document.querySelector('.container-card');
+
+document.querySelector('.kembali1').addEventListener('click', function () {
+  searchReturn();
+});
+document.querySelector('.kembali').addEventListener('click', function () {
+  searchReturn();
 });

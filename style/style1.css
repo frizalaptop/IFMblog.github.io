@@ -396,6 +396,9 @@ footer > p {
   h2 {
     font-size: 20px;
   }
+  .kedua > p {
+    text-indent: 20px;
+  }
   .struktur-teks {
     flex-direction: column;
   }
