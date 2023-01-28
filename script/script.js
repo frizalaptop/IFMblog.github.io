@@ -37,9 +37,11 @@ function searchCardBlog1() {
 
 function searchReturn() {
   const cardList = document.querySelectorAll('.blogJudul');
+  const gaada = document.querySelector('.gaada');
   for (card of cardList) {
     card.parentElement.parentElement.parentElement.parentElement.style.display = 'block';
   }
+  gaada.style.display = 'none';
 }
 
 window.onscroll = function () {
@@ -67,6 +69,7 @@ document.getElementById('search-logo').addEventListener('click', function () {
     isi.style.color = 'red';
     isi.style.paddingTop = '50px';
     isi.style.paddingBottom = '50px';
+    isi.classList.add('gaada');
     container.appendChild(isi);
   }
 });
@@ -77,14 +80,13 @@ document.querySelector('.search-logo').addEventListener('click', function () {
   const main = document.querySelector('.container-main');
   main.style.flexDirection = 'column';
   if (container.innerText == '') {
-    if (container.innerText == '') {
-      const isi = document.createElement('h3');
-      isi.innerText = 'Blog Tidak Ditemukan!';
-      isi.style.color = 'red';
-      isi.style.paddingTop = '50px';
-      isi.style.paddingBottom = '50px';
-      container.appendChild(isi);
-    }
+    const isi = document.createElement('h3');
+    isi.innerText = 'Blog Tidak Ditemukan!';
+    isi.style.color = 'red';
+    isi.style.paddingTop = '50px';
+    isi.style.paddingBottom = '50px';
+    isi.classList.add('gaada');
+    container.appendChild(isi);
   }
 });
 const container = document.querySelector('.container-card');
