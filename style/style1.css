@@ -173,6 +173,9 @@ a {
 ul > ul {
   padding-left: 10px;
 }
+ul > ul {
+  padding-left: 10px;
+}
 .opsipertanyaan {
   display: flex;
   flex-direction: row;
@@ -205,11 +208,14 @@ ul > ul {
   flex-direction: row;
   justify-content: space-evenly;
   margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 .past-tenses > div {
   padding: 10px;
   border-radius: 10px;
   background-color: rgb(141, 155, 231);
+  margin-bottom: 6px;
+
 }
 .past-tenses > div > div {
   margin-bottom: 20px;
@@ -271,6 +277,24 @@ figcaption {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
+.closedcom{
+  margin-bottom: 10px;
+}
+.closedcom, .opencom, .quantifiers{
+  padding-left: 40px;
+}
+.acpas-sentence{
+  display: flex;
+  justify-content: space-evenly;
+}
+.acpas-sentence>div{
+  background-color: rgb(144, 218, 122);
+  padding: 10px;
+  border-radius: 10px;
+}
+.acsen{
+  margin-bottom: 5px;
+}
 .container-sidebar {
   width: 1000px;
   display: flex;
@@ -293,7 +317,6 @@ figcaption {
   background-color: rgb(210, 233, 232);
   padding: 30px;
 }
-
 footer {
   display: flex;
   justify-content: center;
@@ -396,10 +419,14 @@ footer > p {
   h2 {
     font-size: 20px;
   }
-  .kedua > p {
+  .kedua > p, .materi>p {
     text-indent: 20px;
   }
-  .struktur-teks {
+  .materi>h2, .materi>h4, .judulUtama{
+    margin-left: 10px;
+  }
+  .struktur-teks, .acpas-sentence>div {
     flex-direction: column;
+    margin-right: 5px;
   }
 }
