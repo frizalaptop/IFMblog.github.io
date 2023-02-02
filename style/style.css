@@ -280,13 +280,13 @@ footer {
     width: 10px;
   }
   .card {
-    width: 260px;
-    height: 320px;
+    width: 280px;
+    height: 330px;
     margin: 5px;
     background-color: white;
   }
   .img-thumbnail {
-    width: 260px;
+    width: 280px;
   }
   .judul-blog{
     font-size: 14px;
@@ -304,7 +304,7 @@ footer {
   }
   .penulis {
     width: 200px;
-    height: 300px;
+    height: 320px;
     margin: 5px;
   }
   .penulis>h4{
