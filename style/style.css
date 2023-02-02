@@ -281,12 +281,18 @@ footer {
   }
   .card {
     width: 260px;
-    height: 400px;
+    height: 320px;
     margin: 5px;
     background-color: white;
   }
   .img-thumbnail {
     width: 260px;
+  }
+  .judul-blog{
+    font-size: 14px;
+  }
+  .sinopsis{
+    font-size: 12px;
   }
   .keterangan-pembuatan {
     width: 240px;
@@ -297,9 +303,15 @@ footer {
     font-size: 10px;
   }
   .penulis {
-    width: 300px;
+    width: 200px;
     height: 300px;
     margin: 5px;
+  }
+  .penulis>h4{
+    font-size: 14px
+  }
+  .mydescription{
+    font-size: 12px
   }
 }
 
@@ -308,17 +320,5 @@ footer {
     width: 20px;
     margin-right: 10px;
     padding-top: 8px;
-  }
-  .card {
-    width: 375px;
-    height: 410px;
-    margin: 5px;
-    background-color: white;
-  }
-  .img-thumbnail {
-    width: 375px;
-  }
-  .keterangan-pembuatan {
-    width: 300px;
   }
 }

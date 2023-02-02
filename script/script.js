@@ -1,7 +1,7 @@
 const navbar = document.querySelector('.navbar');
 const allMenu = document.querySelector('.allMenu');
 const sticky = navbar.offsetTop;
-
+alert('Untuk dosen Bahasa Inggris ku yang cantik. Kalau ada blog mahasiswa sekelas ku yang sama berarti meraka yang lihat ke saya ya...')
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add('sticky');
